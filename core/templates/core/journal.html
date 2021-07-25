@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Journal{% endblock title %}
+
+{% block hero %} 
+<!--  hero  -->
+<section id="hero">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="content">
+                    <h2>Blog Posts</h2>
+                    <p class='mt-4'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo distinctio temporibus quos et
+                        ex, modi consectetur mollitia incidunt officia dolor?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end hero -->
+{% endblock hero %}
+
+
+{% block blog %}
+
+<!-- blog  -->
+<section id="blog" class='bg-grey' >
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="section-header">
+                    <h2 class="section-title">Blog</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+        {% for blog in blogs %}
+              <div class="col-lg-4 col-md-6 md-5">
+                <div class="blog-post">
+                    <div class="blog-img">
+                        <img src="{{blog.image.url}}" alt="blogpost">
+                    </div>
+                    <div class="blog-desc pt-4">
+                        <h2><a href="#">{{blog.title}}</a></h2>
+                        <div class="date mt-4 mb-3">
+                            <span>{{blog.created_at}}</span>
+                            <span class="mx-1">by</span>
+                            <span>{{blog.author}}</span>
+                        </div>
+                        <p>{{blog.content}}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+
+</section>
+
+{% endblock blog %}

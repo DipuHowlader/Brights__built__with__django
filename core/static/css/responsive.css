@@ -1,0 +1,36 @@
+@media(max-width:993px){
+    section#aboutUs{
+        padding: 0em 0;
+    }
+    .text-wraffer{
+        margin: 5em 0;
+    }
+    .single-counter{
+        margin-bottom: 3rem;
+    }
+
+}
+
+
+
+@media(max-width:500px){
+    :root{
+        font-size: 9px;
+    }
+  
+    .single-counter.d-flex {
+        margin: 3em 0;
+    }
+
+    .single-testimonial{
+        text-align: center;
+        margin: 2rem 0;
+        
+    }
+    .single-testimonial .testimonial-imgBox{
+        margin: auto;
+    }
+    .blog-post{
+        margin-bottom: 5rem;
+    }
+}

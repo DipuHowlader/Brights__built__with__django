@@ -1,0 +1,52 @@
+{% load static %}
+
+    <!-- header -->
+    <header id="home">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-6">
+                    <div id="logo">
+                        <h2 class="navbar-brand text-white font-weight-bold">Brights<span>.</span></h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="menu text-right d-flex flex-column align-items-end justify-content-around">
+                        <span class="icone-bar"></span>
+                        <span class="icone-bar"></span>
+                        <span class="icone-bar"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <nav class="navbar-nav dummy-nav">
+
+                <div class="cross-icone">
+                    <i class="fas fa-times exit"></i>
+                </div>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="{% url 'core:HomePage' %}" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'core:AboutPage' %}" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'core:WorkPage' %}" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'core:JournalPage' %}" class="nav-link">journal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'core:ContactPage' %}" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <!--  end header- -->

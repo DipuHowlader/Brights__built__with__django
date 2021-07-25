@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit = no">
+    <title>Brights | {% block title %}{% endblock title %}</title>
+    <!-- -------- css ---------- -->
+    <link rel="shortcut icon" href="{% static './images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static './css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static './assets/css/splide.min.css' %}">
+</head>
+
+<body>
+    {% include "header.html" %}
+
+    {% block hero %} {% endblock hero %}
+
+    {% block about %} {% endblock about %}
+
+    {% block team %} {% endblock team %}
+    
+    {% block service %} {% endblock service %}
+    
+    {% block works %} {% endblock works %}
+    
+    {% block counter %} {% endblock counter %}
+    
+    {% block studio %} {% endblock studio %}
+    
+    {% block testimonial %} {% endblock testimonial %}
+    
+    {% block blog %} {% endblock blog %}
+    {% block contact %} {% endblock contact %}
+    
+
+{% include "footer.html" %}
+
+
+    <!-- -------- all js here -------- -->
+    {% comment %} <script src="{% static './js/jquery.min.js' %}"></script> {% endcomment %}
+    {% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script> {% endcomment %}
+    <script src='{% static "./assets/js/splide.min.js" %}'></script>
+    <script src="{% static './js/main.js' %}"></script>
+</body>
+
+</html>
