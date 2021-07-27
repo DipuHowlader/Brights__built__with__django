@@ -155,6 +155,9 @@ SESSION_COOKIE_SECURE = True
 SECURE_HSTS_PRELOAD = True
 CSRF_COOKIE_SECURE = True
 
+
+
+
 # whitenoise
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
 
