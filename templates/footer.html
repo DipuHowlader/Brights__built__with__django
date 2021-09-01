@@ -16,19 +16,19 @@
                     <h2 class="mb-5">Quick Links</h2>
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Home</a>
+                            <a href="{% url 'core:HomePage' %}" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./about.html" class="nav-link">About</a>
+                            <a href="{% url 'core:AboutPage' %}" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./work.html" class="nav-link">Work</a>
+                            <a href="{% url 'core:WorkPage' %}" class="nav-link">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./journal.html" class="nav-link">journal</a>
+                            <a href="{% url 'core:JournalPage' %}" class="nav-link">journal</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./contact.html" class="nav-link">Contact</a>
+                            <a href="{% url 'core:ContactPage' %}" class="nav-link">Contact</a>
                         </li>
                     </ul>
                 </div>

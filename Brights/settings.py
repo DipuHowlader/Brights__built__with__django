@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-f0+i&w7&mu$tk0yvr7fzhox@o+gj#4qewe2234234wwtQ@!#$%@#%$@!@#$@!#$@!#$@!%poehjfjklsdmf,lasmct_ewn6w55j&e-guk$m#w')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'f0+i&w7&mu$tk0yvr7f#hox@o+gj#4qeLe2234234wwtQ@!#$%@#%$@!@#$@!#$@!#$@!%poehjfjklsdmf,lasmct_ewn6w55j&e-guk$m#w')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != False
 
-ALLOWED_HOSTS = ['safe-lake-91203.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'sslserver',
     # internal
     'core'
 ]
@@ -95,9 +96,6 @@ DATABASES = {
 
 DATABASES['default'] = dj_database_url.config(default= 'postgres://postgres:1234@localhost/Brights__db')
 
-
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -159,5 +157,5 @@ CSRF_COOKIE_SECURE = True
 
 
 # whitenoise
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
 
