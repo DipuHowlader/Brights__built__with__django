@@ -157,5 +157,5 @@ CSRF_COOKIE_SECURE = True
 
 
 # whitenoise
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedMainfestStaticFilesStorage'
 
