@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn brights.wsgi
+web: gunicorn Brights.wsgi
